@@ -25,3 +25,22 @@ for i in range(len(greeting)):
 numbers = [1, 2, 3, 4, 5]
 squared_numbers = [x ** 2 for x in numbers]
 print(squared_numbers)
+
+
+#example 5
+for x in range(2):
+    print("This is the outer loop iteration number " + str(x))
+    for y in range(3+1):
+        print("Inner loop iteration number " + str(y))
+    print("Exit inner loop")
+
+
+#example 6
+for x in range(7):
+    if x % 2 == 0:
+        print(x)
+# The loop should print 0, 2, 4, 6
+
+# As a list comprehension:
+even_numbers = [x for x in range(7) if x % 2 == 0]
+print(even_numbers)
